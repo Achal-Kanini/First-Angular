@@ -1,0 +1,28 @@
+<h1>Project name is {{title}}</h1>
+
+First Name : <input type="text" [(ngModel)]="fname">
+
+<h3>Your name is {{fname}}</h3>
+
+<div>
+  first num
+  <input  type="number" #first required [(ngModel)]='firstnum'/>
+</div>
+<div>
+  second num
+  <input  type="number" #second required [(ngModel)]='secondnum'/>
+</div>
+<div>
+  <input type="submit" class="btn btn-success" value="Add" (click)="AddNum()"/>
+  <input type="submit" class="btn btn-success" value="AddNumber" (click)="sum(first.value,second.value)"/>
+</div>
+<div>
+  result is {{result}}
+</div>
+
+
+<!-- <app-emplist></app-emplist> -->
+
+<a routerLink="Elist">List of Employees</a>
+
+<router-outlet></router-outlet>

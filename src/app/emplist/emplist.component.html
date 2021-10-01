@@ -1,0 +1,12 @@
+<p>emplist works!</p>
+
+<div>
+    <table class="table">
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.eid}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.esalary}}</td>
+            <td><img src={{emp.photourl}} height=100 width = 100></td>
+        </tr>
+    </table>
+</div>
